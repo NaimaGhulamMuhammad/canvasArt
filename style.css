@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nunito, 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+#canvas{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.controller{
+    position: fixed;
+    top: 20vh;
+    left: 10vh;
+    width: 18vw;
+    height: 30vh;
+    background-color: rgb(0,0,0,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    color: blanchedalmond;
+}
+.control1{
+    /* width: 100%;
+    height: 50%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input{
+    font-size: 10px;
+}
+
+@media screen and (max-width: 900px){
+    .controller{
+        top: 10vh;
+        left: 10vh;
+        width: 30vw;
+        height: 30vh;
+    }
+    .control1{
+        flex-direction: column;
+    }
+    .input{
+        font-size: 8px;
+    }
+}
